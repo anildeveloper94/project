@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-image: url(../project1/images/back.jpg);
+    }
+    .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 100%;
+}
+
+.header {
+  background-color: #f1f1f1;
+}
+
+.header1 h3 {
+  text-align: center;
+}
+
+.list1 {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.list1 li {
+  margin: 0 15px;
+}
+
+.main1, .main2, .main3, .main4, .main5 {
+  padding: 20px;
+}
+
+.img1, .img2, .img3, .img4, .img5 {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  background-color: #333;
+  /* color: white; */
+  text-align: center;
+  padding: 10px;
+}
+
+/* Media Queries */
+
+/* Tablets (portrait and landscape) */
+@media (max-width: 768px) {
+  .header1 {
+    text-align: center;
+  }
+
+  .list1 {
+    flex-direction: column;
+  }
+
+  .list1 li {
+    margin: 10px 0;
+  }
+
+  .main1, .main2, .main3, .main4, .main5 {
+    padding: 10px;
+  }
+
+  .form1 input,
+  .form2 input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form1 input[type="button"] {
+    width: auto;
+  }
+}
+
+/* Mobile devices (portrait) */
+@media (max-width: 480px) {
+  .header1 {
+    padding: 10px;
+  }
+
+  .list1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list1 li {
+    margin: 5px 0;
+  }
+
+  .main1, .main2, .main3, .main4, .main5 {
+    padding: 5px;
+  }
+
+  .form1 input,
+  .form2 input {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .textarea {
+    width: 100%;
+    height: 80px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item header">
+      <div class="header1">
+        <h3>Puzzle</h3>
+        <ul class="list1">
+          <li>Home</li>
+          <li>Services</li>
+          <li>clients</li>
+          <li>external</li>
+          <li>contact</li>
+        </ul>
+      </div>
+    </div>
+    <div class="item main1">
+      <img class="img1" src="../project1/images/1.jpg" alt="" />
+      <div class="m1c1">
+        <h3>Puzzle Bootstrap Template</h3>
+        <p>
+          Puzzle is clean and fresh Bootstrap v3.3.6 one-page HTML CSS
+          template using alternative Puzzle is clean and fresh Bootstrap
+          v3.3.6 one-page HTML CSS template using alternative
+        </p>
+        <p>Puz</p>
+
+        <form action="" class="form1">
+          <input
+            type="button"
+            value="Big button"
+            style="background-color: aliceblue; padding: 5px"
+          />
+          <input
+            type="button"
+            value="Download"
+            style="
+              background-color: rgb(28, 194, 231);
+              padding: 5px;
+              text-align: center;
+            "
+          />
+        </form>
+      </div>
+    </div>
+    <div class="item main2">
+      <img class="img2" src="../project1/images/2.jpg" alt="" />
+      <div class="m2c2">
+        <h3>Quality Services</h3>
+        <p>
+          Colorfully as well as meaningfully designed free puzzle type school
+          Bootstrap themes will attract not only the students but also the
+          option but a variety of choices so thats of the templates is of high
+          quality yet you may have a special choice.
+        </p>
+        <ul class="list2">
+          <li>Picture looking awesome</li>
+          <li>picture from could</li>
+          <li>photographer are senior in photography</li>
+        </ul>
+        <p>
+          Puzzle Template is 100% free to download for anyone. You are allowed
+          to download, edit and . Thank you.
+        </p>
+        <p>
+          Commingle aehfoahf very design of the templates is of high quality
+          yet you may have a special choice.
+        </p>
+      </div>
+    </div>
+    <div class="item main3">
+      <img class="img3" src="../project1/images/3.jpg" alt="" />
+      <div class="m3c3" style="padding: 10px">
+        <h3>Our Clients</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illum
+          quaerat dignissimos incidunt nostrum, perspiciatis voluptatibus iure
+          itaque, eum aspernatur cumque velit.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ab
+          aliquid doloribus laboriosam modi porro earum recusandae cumque
+          velit.
+        </p>
+        <p>
+          Lorem ipsum dolor di porro earum recusandae illum earum recusandae
+          eum aspernatur eum aspernatur cumque velit.
+        </p>
+        <p>
+          Lorem ipsum , ab aliquid doloribus laboriosam modi porro earum
+          recusandae eum aspernatur illum earum recusandae eum aspernaturillum
+          earum recusandae eum aspernatur cumque velit.
+        </p>
+        <form action="" class="form2">
+          <input type="button" value="Small Button" />
+          <input type="button" value="Download" />
+          <input type="button" value="Demo" />
+        </form>
+      </div>
+    </div>
+    <div class="item main4">
+      <div class="m4c4" style="padding: 10px; justify-content: center">
+        <h3>Contact Us</h3>
+        <p>
+          if u have any interest on this project can you fill the form and
+          please add your details here
+        </p>
+        <!-- <p style="border:1px solid black; width:130px; text-align:start; color: black;">Your Name...  <br>  </p> -->
+        <form action="">
+          <input type="text" placeholder="Your Name...  " />
+          <input type="email" placeholder="Your Email..." /> <br />
+          <br />
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Yours Subject..."
+            style="width: 344px"
+          />
+          <br />
+          <br />
+          <textarea
+            name=""
+            id=""
+            style="width: 100%; height: 100px; align-items: start"
+          >
+Write your Message.... 
+            </textarea
+          >
+          <br />
+          <input type="button" value="submit" />
+        </form>
+      </div>
+      <img class="img4" src="../../Project1/images/4.jpg" alt="" />
+    </div>
+    <div class="item main5">
+      <img class="img5" src="../../Project1/images/5.png" alt="" />
+      <div class="main5child">
+        <h3>About This Website</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam id,
+          provident quod repellat earum autem consequatur vel cumque,
+          consequuntur, assumenda sed eaque. Repellendus obcaecati magni ipsa,
+          facere ullam voluptate provident?
+        </p>
+      </div>
+    </div>
+    <div class="item footer">
+      <p style="color: white; text-align: center">
+        Copyright @ 2084 Company Name | Design:
+        <span style="color: rgba(255, 255, 0, 0.629)"> Puzzle </span>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #btn:hover ~ p {
+        color: red;
+        /* background: green; */
+        font-size: 45px;
+        background-color: blue;
+        text-decoration: dashed;
+        transform: translateX(300px);
+
+      }
+      p {
+        /* transition-property: color, font-size, background-color; */
+       transition-property: all;
+        transition-duration: 10s;
+        /* transition-delay: 3s; */
+        
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">click me</button>
+    <p>i am anil</p>
+  </body>
+</html>
+<!-- transitions are having property,duration,delay -->
