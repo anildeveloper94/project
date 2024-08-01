@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>main grid</title>
+    <style>
+      .container {
+        border: 5px solid orange;
+        background: #c1bebe;
+        gap: 8px;
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "side main main"
+          "side main main"
+          "footer footer footer";
+        align-items: center;
+        /* justify-content: center; */
+      }
+      .grid {
+        height: 100px;
+        background-color: blanchedalmond;
+      }
+      .header {
+        background-color: gray;
+        grid-area: header;
+        /* position: fixed; */
+        /*         
+            top:0px;
+            height: 30px; */
+      }
+      .footer {
+        background-color: aquamarine;
+        grid-area: footer;
+      }
+      .sidebar {
+        background-color: blueviolet;
+        grid-area: side;
+      }
+      .main {
+        background-color: aqua;
+        grid-area: main;
+      }
+      .item {
+        /* display: f */
+        display: flex;
+        position: relative;
+        display: inline;
+        justify-content: space-between;
+        height: 80px;
+        width: 100%;
+      }
+      /* .header{
+        background-color: rgb(228, 177, 110);
+        position:fixed;
+        top:0px;
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        gap:15px;
+        color:beige;
+     } */
+      ul{
+        display: flex;
+        list-style-type: none;
+        gap:20px;
+        justify-content: space-between;
+        position:fixed;
+        top:0px;
+        left:0px;
+        background-color: aqua;
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="grid header">
+        <ul>
+            <li><img src="../images/10k coders help.png" alt="" height="30px"></li>
+            <li>Home</li>
+            <li>Why</li>
+            <li>Curriculum</li>
+            <li>Team</li>
+        <li>Employee</li>
+        <li>Admission</li>
+        <li>Price</li>
+        <li>FAQ</li>
+        </ul>
+      </div>
+      <div class="grid side">Sidebar</div>
+      <div class="grid main">Main</div>
+      <div class="grid footer">Footer</div>
+    </div>
+  </body>
+</html>

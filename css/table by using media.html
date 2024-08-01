@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tables by using media queries</title>
+    <style>
+      table,
+      tr,
+      td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        height: 30px;
+        width: 150px;
+      }
+      @media screen  and (min-width:270px) and (max-width:350px){
+        .first{
+          background-color: red;
+          padding: 20px;
+          border: 2px solid black;
+          box-shadow: 12px 13px 15px  red 20px 14px 5px  green 10px 12px 20px orangered;
+          overflow: scroll;
+          
+            }
+            h1{
+              border: 2px solid black;
+              margin-top: 50px;
+              background-image:radial-gradient(orange,green);
+              width: 100px;
+              font-style: italic;
+            
+            }
+            .second, .third,h2,h3{
+              display: none;
+            }
+             .first{
+              position: absolute;
+              top: 100px;
+              left:100px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+            }
+            h1{
+              position: absolute;
+              left: 115px;
+            }
+        
+      }
+      @media screen and (min-width:351px) and (max-width:750px)
+      {
+        .second{
+          background-color: red;
+          padding: 20px;
+          border: 2px solid black;
+        }
+        h2{
+              border: 2px solid black;
+              margin-top: 50px;
+              background-image:radial-gradient(orange,green);
+              width: 100px;
+              font-style: italic;
+        }
+        .first,.third,h1,h3{
+          display: none;
+        }
+            
+      }
+      @media screen and (min-width:750px) and (max-width:1024px)
+      {
+        .third{
+          background-color: red;
+          padding: 20px;
+          border: 2px solid black;
+        }
+        h3{
+              border: 2px solid black;
+              margin-top: 50px;
+              background-image:radial-gradient(orange,green);
+              width: 100px;
+              font-style: italic;
+        }
+        .first,.second,h1,h2{
+          display: none;
+        }
+            
+      }
+  
+    </style>
+  </head>
+  <body>
+    <table class="first">
+      <tr>
+        <h1>Table 1</h1>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <br />
+    <table class="second">
+      <tr>
+        <h2>table2</h2>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table >
+    <br />
+    <table class="third">
+      <tr>
+        <h3>Table3</h3>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>

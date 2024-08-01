@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attribute selectors in table</title>
+    <style>
+      table{
+        border: 5px solid red;
+        border-radius: 30px;
+      }
+      img {
+        height: 30vh;
+        width: 20vw;
+      }
+      [class="butterfly"] {
+        border: 5px solid red;
+        padding: 20px;
+        background: #a8d818;
+        border-radius: 30px;
+      }
+      [class|="car"] {
+        border: 5px solid rgb(246, 16, 101);
+        padding: 20px;
+        background: #d5470a;
+        border-radius: 30px;
+      }
+      [class~="car2"] {
+        border: 5px solid #27f610;
+        padding: 20px;
+        background: #2c0ad5;
+        border-radius: 30px;
+      }
+      [class^="bir"] {
+        border: 5px solid rgb(50, 50, 19);
+        padding: 20px;
+        background: #e19881;
+        border-radius: 30px;
+      }
+      [class="ant"]{
+       border:5px solid red;
+       background: #27f610;
+       padding: 20px;
+       border-radius: 30px;
+      }
+      [class$="ing"]{
+        border: 5px dotted #e19881;
+        padding: 25px;
+        background: #a8d818;
+        border-radius: 30px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1> <u>Image Gallery</u></h1>
+    <table>
+      <tr>
+        <td><img class="butterfly" src="../images/butterfly.jpg" alt="" /></td>
+        <td><img class="car" src="../images/car.jpg" alt="" /></td>
+        <td><img class="car2" src="../images/car2.jfif" alt="" /></td>
+      </tr>
+      <tr>
+        <td><img class="bird" src="../images/birds.jpg" /></td>
+        <td><img class="ant" src="../images/ant.jpg" /></td>
+        <td><img class="desing" src="../images/desing.jpg" /></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>

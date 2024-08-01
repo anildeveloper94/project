@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid template</title>
+    <style>
+        .container{
+            border: 5px solid rgb(40, 38, 37);
+            background: #26e533;
+            display: grid;
+            gap:5px;
+            grid-template-areas: 
+            "header header header "
+            "sidebar  content1 content1 "
+            "sidebar  content2 content3"
+            "footer footer  footer"
+            ;
+            height: 500px;
+            justify-content: centers;
+            border-radius: 5px;
+        }
+        .header{
+            grid-area: header;
+            background:red;
+        }
+        .sidebar{
+                grid-area: sidebar;
+                background-color: blue;
+        }
+        .content1{
+            background: rgb(174, 165, 161);
+            grid-area: content1;
+        }
+        .content2{
+            background: #d4c114;
+            grid-area: content2;
+        }
+        .content3{
+            background: #d00ec0;
+            grid-area: content3;
+        }
+        .footer{
+            grid-area: footer;
+            background: #e93838;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="grid header">Header</div>
+    <div class="grid sidebar">sidebar</div>
+    <div class="grid content1">Content1</div>
+    <div class="grid content2">Content2</div>
+    <div class="grid content3">Content3</div>
+    <div class="grid footer">Footer</div>
+</div>
+</body>
+</html>
